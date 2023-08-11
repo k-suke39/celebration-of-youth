@@ -63,8 +63,8 @@ export default function Page() {
   };
   return showFinish ? (
     <div className='flex justify-center items-center flex-col h-screen'>
-       <a href={`https://twitter.com/intent/tweet?text=私の青春はその程度でした。。。&url=https://celebration-of-youth.vercel.app/`} className="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-bold rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-500 dark:focus:ring-blue-800">Twitter</a>
-      <p className="font-bold text-gray-700 dark:text-gray-400 text-2xl mt-3">結局のところ、あなたの青春はその程度でした。。。</p>
+       <a href={`https://twitter.com/intent/tweet?text=青春とはなんでしょうか。。。&url=https://celebration-of-youth.vercel.app/`} className="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-bold rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-500 dark:focus:ring-blue-800">Twitter</a>
+      <p className="font-bold text-gray-700 dark:text-gray-400 text-2xl mt-3">青春とはなんでしょうか</p>
     </div>
   ) : (
 <div className='flex justify-center items-center flex-col h-screen'>
