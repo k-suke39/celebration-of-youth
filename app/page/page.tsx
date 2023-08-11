@@ -63,20 +63,20 @@ export default function Page() {
   };
   return showFinish ? (
     <div className='flex justify-center items-center flex-col h-screen'>
-       <a href={`https://twitter.com/intent/tweet?text=私の青春はその程度でした。真面目にカリキュラム進めます、、、&url=${process.env.NEXT_PUBLIC_BASE_URL}`} class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-bold rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-500 dark:focus:ring-blue-800">Twitter</a>
-      <p class="font-bold text-gray-700 dark:text-gray-400 text-2xl mt-3">結局のところ、あなたの青春はその程度です。早くカリキュラムを進めてください。</p>
+       <a href={`https://twitter.com/intent/tweet?text=私の青春はその程度でした。真面目にカリキュラム進めます、、、&url=${process.env.NEXT_PUBLIC_BASE_URL}`} className="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-bold rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-500 dark:focus:ring-blue-800">Twitter</a>
+      <p className="font-bold text-gray-700 dark:text-gray-400 text-2xl mt-3">結局のところ、あなたの青春はその程度です。早くカリキュラムを進めてください。</p>
     </div>
   ) : (
 <div className='flex justify-center items-center flex-col h-screen'>
-  <a href="#" class="block p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"> {score + 1} / 5問</h5>
-    <p class="font-bold text-gray-700 dark:text-gray-400">{questions[current].questionText}</p>
+  <a href="#" className="block p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+    <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"> {score + 1} / 5問</h5>
+    <p className="font-bold text-gray-700 dark:text-gray-400">{questions[current].questionText}</p>
   </a>
   <div>
     <ul className="flex mt-4 space-y-2">
       {questions[current].answerOptions.map((answer, key) => (
         <li key={key} onClick={() => check(answer.isCorrect) } className="flex">
-          <button type="button" class="text-white bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-bold rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">{answer.answerText}</button>
+          <button type="button" className="text-white bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-bold rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">{answer.answerText}</button>
         </li>
       ))}
     </ul>
