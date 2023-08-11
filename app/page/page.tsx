@@ -6,7 +6,7 @@ import { useState } from "react";
 export default function Page() {
   const questions = [
     {
-      questionText: "恋人同士でシーブリーズのフタを交換したことがある？",
+      questionText: "恋人同士プリクラを撮ったことがある？",
       answerOptions: [
         { answerText: "はい", isCorrect: true },
         { answerText: "いいえ", isCorrect: false }
@@ -50,7 +50,7 @@ export default function Page() {
       alert("ふ〜ん");
       setScore(score + 1);
     } else {
-      alert("そりゃそうだよね〜");
+      alert("ふ〜ん");
       setScore(score + 1);
     }
 
