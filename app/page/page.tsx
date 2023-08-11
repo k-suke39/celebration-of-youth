@@ -45,7 +45,7 @@ export default function Page() {
   const [current, setCurrent] = useState(0);
   const [showFinish, setShowFinish] = useState(false);
   const [score, setScore] = useState(0);
-  const check = (isCorrect) => {
+  const check = (isCorrect: Boolean) => {
     if (isCorrect === true) {
       alert("ふ〜ん");
       setScore(score + 1);
