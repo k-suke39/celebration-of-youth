@@ -17,8 +17,8 @@
 
 ## 使用技術
 
+- React 18.2.0
 - Next.js 13.4.13
 - TypeScript 5.1.6
-- React 18.2.0
 - TailwindCSS 3.3.3
 - Vercel
