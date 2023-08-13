@@ -1,5 +1,7 @@
 import '@/styles/globals.css'
 import Link from 'next/link'
+import React, { useState } from 'react';
+
 export default function Page(){
   return (
     <div className='flex justify-center items-center flex-col h-screen'>
