@@ -1,7 +1,7 @@
 {
     "singleQuote": true, 
-    "trailingComma": "all", // 配列・オブジェクトの末尾のカンマをつける
-    "semi": false, // セミコロンは省略
-    "arrowParens": "avoid" // arrow関数の引数にかっこをつけない
+    "trailingComma": "all",
+    "semi": false, 
+    "arrowParens": "avoid" 
   }
   

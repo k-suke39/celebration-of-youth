@@ -1,6 +1,6 @@
 export const metadata = {
-  title: 'あるある青春メーカー',
-  description: 'あるある青春メーカー',
+  title: '青春あるある診断',
+  description: '青春あるある診断',
 }
 
 export default function RootLayout({
